@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  java:
+    name: Java ${{ matrix.java }} (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        java: ["11", "21"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: maven
+      - name: Build and test (no Charles binaries needed)
+        working-directory: java
+        shell: bash
+        run: bash ./mvnw -B verify
+      - name: Upload agent JAR
+        if: matrix.os == 'windows-latest' && matrix.java == '21'
+        uses: actions/upload-artifact@v4
+        with:
+          name: charles-mcp-agent
+          path: java/agent/target/charles-mcp-agent.jar
+
+  python:
+    name: Python ${{ matrix.python }} (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install
+        working-directory: python
+        run: python -m pip install -e ".[dev]"
+      - name: Lint
+        working-directory: python
+        run: ruff check src tests ../scripts
+      - name: Test
+        working-directory: python
+        run: pytest -q
+
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: No proprietary binaries or captures committed
+        run: |
+          bad=$(git ls-files | grep -Ei '\.(jar|chls|chlsj)$' || true)
+          if [ -n "$bad" ]; then echo "Forbidden files committed:"; echo "$bad"; exit 1; fi

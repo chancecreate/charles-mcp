@@ -1,0 +1,49 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build release assets
+        shell: pwsh
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart("v")
+          ./scripts/package-release.ps1 -Version $version
+      - name: Publish GitHub release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart("v")
+          $notes = @"
+          ## Quickstart (Windows)
+
+          1. Download **charles-mcp-$version-windows.zip** below and unzip it.
+          2. Close Charles, then double-click **Install.cmd**.
+          3. Start Charles. If you use Claude Code, it's already connected.
+
+          You need Charles Proxy 4.6.x (4.6.8 recommended) and [Python 3.11+](https://www.python.org/downloads/).
+          See README.txt in the ZIP for details.
+
+          **Other assets:** the agent JAR on its own, the Python wheel, and SHA256SUMS.txt.
+          "@
+          $extra = @()
+          if ($version.Contains("-")) { $extra += "--prerelease" }   # v0.1.0-rc.1 etc. never become "latest"
+          gh release create "${{ github.ref_name }}" (Get-ChildItem dist -File).FullName `
+            --title "charles-mcp ${{ github.ref_name }}" --notes $notes @extra

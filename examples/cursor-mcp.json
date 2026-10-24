@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "charles": {
+      "command": "charles-mcp",
+      "args": [],
+      "env": {}
+    }
+  }
+}

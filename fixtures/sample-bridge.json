@@ -1,0 +1,2879 @@
+{
+ "charles_version": "4.6.2",
+ "events": [
+  {
+   "schema_version": 1,
+   "event_id": 1,
+   "session_id": "s-afcd363b",
+   "transaction_id": null,
+   "event_type": "session_changed",
+   "timestamp_ms": 1792871738347
+  },
+  {
+   "schema_version": 1,
+   "event_id": 2,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t1",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871738346,
+   "request": {
+    "method": "GET",
+    "url": "http://control.charles/recording/start",
+    "host": "control.charles"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "text/html"
+   },
+   "timing": {
+    "start_ms": 1792871738332,
+    "end_ms": 1792871738343,
+    "duration_ms": 11
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 351
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 3,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t1",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871738348,
+   "request": {
+    "method": "GET",
+    "url": "http://control.charles/recording/start",
+    "host": "control.charles"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "text/html"
+   },
+   "timing": {
+    "start_ms": 1792871738332,
+    "end_ms": 1792871738343,
+    "duration_ms": 11
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 351
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 4,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t2",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871746031,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?api_key=synthetic-key-1",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746030,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 5,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t2",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871746031,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?api_key=synthetic-key-1",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746030,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 6,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t2",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871746033,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?api_key=synthetic-key-1",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746030,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 7,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t2",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871746033,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?api_key=synthetic-key-1",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746030,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 8,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t2",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871746034,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?api_key=synthetic-key-1",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746030,
+    "end_ms": 1792871746034,
+    "duration_ms": 4
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 65
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 9,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t3",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871746035,
+   "request": {
+    "method": "POST",
+    "url": "http://api.example.test/echo",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746035,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 10,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t3",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871746036,
+   "request": {
+    "method": "POST",
+    "url": "http://api.example.test/echo",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746035,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 11,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t3",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871746037,
+   "request": {
+    "method": "POST",
+    "url": "http://api.example.test/echo",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746035,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 33,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 12,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t3",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871746038,
+   "request": {
+    "method": "POST",
+    "url": "http://api.example.test/echo",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746035,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 33,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 13,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t3",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871746038,
+   "request": {
+    "method": "POST",
+    "url": "http://api.example.test/echo",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746035,
+    "end_ms": 1792871746038,
+    "duration_ms": 3
+   },
+   "sizes": {
+    "request_bytes": 33,
+    "response_bytes": 65
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 14,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t4",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871746056,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746056,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 15,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t4",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871746057,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746056,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 16,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t4",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871746057,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746056,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 17,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t4",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871746061,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 302,
+    "content_type": "text/plain"
+   },
+   "timing": {
+    "start_ms": 1792871746056,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 18,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t4",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871746062,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 302,
+    "content_type": "text/plain"
+   },
+   "timing": {
+    "start_ms": 1792871746056,
+    "end_ms": 1792871746062,
+    "duration_ms": 6
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 19,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t5",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871746063,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?from=redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746063,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 20,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t5",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871746063,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?from=redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746063,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 21,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t5",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871746064,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?from=redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746063,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 22,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t5",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871746065,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?from=redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746063,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 23,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t5",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871746065,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?from=redirect",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746063,
+    "end_ms": 1792871746065,
+    "duration_ms": 2
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 62
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 24,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t6",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871746087,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/slow?ms=1500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746087,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 25,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t6",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871746088,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/slow?ms=1500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746087,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 26,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t6",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871746089,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/slow?ms=1500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871746087,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 27,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t6",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871747589,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/slow?ms=1500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746087,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 28,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t6",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871747590,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/slow?ms=1500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746087,
+    "end_ms": 1792871747590,
+    "duration_ms": 1503
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 18
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 29,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t7",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871747610,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/large?bytes=300000",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747610,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 30,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t7",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871747610,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/large?bytes=300000",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747610,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 31,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t7",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871747611,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/large?bytes=300000",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747610,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 32,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t7",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871747612,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/large?bytes=300000",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747610,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 33,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t7",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871747617,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/large?bytes=300000",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747610,
+    "end_ms": 1792871747616,
+    "duration_ms": 6
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 300000
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 34,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t8",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871747617,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/gzip",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747617,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 35,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t8",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871747618,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/gzip",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747617,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 36,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t8",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871747619,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/gzip",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747617,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 37,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t8",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871747619,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/gzip",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json"
+   },
+   "timing": {
+    "start_ms": 1792871747617,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 38,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t8",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871747619,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/gzip",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json"
+   },
+   "timing": {
+    "start_ms": 1792871747617,
+    "end_ms": 1792871747619,
+    "duration_ms": 2
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 53
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 39,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t9",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871747640,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/binary",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747640,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 40,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t9",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871747641,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/binary",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747640,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 41,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t9",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871747641,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/binary",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747640,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 42,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t9",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871747642,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/binary",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/octet-stream"
+   },
+   "timing": {
+    "start_ms": 1792871747640,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 43,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t9",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871747643,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/binary",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/octet-stream"
+   },
+   "timing": {
+    "start_ms": 1792871747640,
+    "end_ms": 1792871747642,
+    "duration_ms": 2
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 2048
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 44,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t10",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871747644,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/secret",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747644,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 45,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t10",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871747644,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/secret",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747644,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 46,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t10",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871747656,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/secret",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747644,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 47,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t10",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871747656,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/secret",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747644,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 48,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t10",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871747657,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/secret",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747644,
+    "end_ms": 1792871747657,
+    "duration_ms": 13
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 125
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 49,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t11",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871747671,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/status/500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747671,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 50,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t11",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871747671,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/status/500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747671,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 51,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t11",
+   "event_type": "request_complete",
+   "timestamp_ms": 1792871747673,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/status/500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747671,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 52,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t11",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871747673,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/status/500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 500,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747671,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 53,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t11",
+   "event_type": "response_complete",
+   "timestamp_ms": 1792871747674,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/status/500",
+    "host": "api.example.test"
+   },
+   "response": {
+    "status": 500,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747671,
+    "end_ms": 1792871747674,
+    "duration_ms": 3
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 15
+   },
+   "charles_status": "complete",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 54,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t12",
+   "event_type": "request_created",
+   "timestamp_ms": 1792871747674,
+   "request": {
+    "method": "GET",
+    "url": "http://unreachable.example.test:9/unreachable",
+    "host": "unreachable.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747674,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 55,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t12",
+   "event_type": "request_headers_ready",
+   "timestamp_ms": 1792871747676,
+   "request": {
+    "method": "GET",
+    "url": "http://unreachable.example.test:9/unreachable",
+    "host": "unreachable.example.test"
+   },
+   "response": {
+    "status": null,
+    "content_type": null
+   },
+   "timing": {
+    "start_ms": 1792871747674,
+    "end_ms": null,
+    "duration_ms": null
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 0
+   },
+   "charles_status": "sending_request_header",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 56,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t12",
+   "event_type": "response_headers_ready",
+   "timestamp_ms": 1792871747688,
+   "request": {
+    "method": "GET",
+    "url": "http://unreachable.example.test:9/unreachable",
+    "host": "unreachable.example.test"
+   },
+   "response": {
+    "status": 503,
+    "content_type": "text/html;charset=iso-8859-1"
+   },
+   "timing": {
+    "start_ms": 1792871747674,
+    "end_ms": 1792871747688,
+    "duration_ms": 14
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 932
+   },
+   "charles_status": "waiting_for_response_body",
+   "error_type": null
+  },
+  {
+   "schema_version": 1,
+   "event_id": 57,
+   "session_id": "s-afcd363b",
+   "transaction_id": "t12",
+   "event_type": "failed",
+   "timestamp_ms": 1792871747688,
+   "request": {
+    "method": "GET",
+    "url": "http://unreachable.example.test:9/unreachable",
+    "host": "unreachable.example.test"
+   },
+   "response": {
+    "status": 503,
+    "content_type": "text/html;charset=iso-8859-1"
+   },
+   "timing": {
+    "start_ms": 1792871747674,
+    "end_ms": 1792871747688,
+    "duration_ms": 14
+   },
+   "sizes": {
+    "request_bytes": 0,
+    "response_bytes": 932
+   },
+   "charles_status": "failed",
+   "error_type": "ConnectException"
+  }
+ ],
+ "transactions": {
+  "t1": {
+   "schema_version": 1,
+   "transaction_id": "t1",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 3,
+   "complete": true,
+   "first_seen_ms": 1792871738346,
+   "updated_ms": 1792871738348,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://control.charles/recording/start",
+    "scheme": "http",
+    "host": "control.charles",
+    "port": null,
+    "path": "/recording/start",
+    "query": null,
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Host",
+      "value": "control.charles"
+     },
+     {
+      "name": "User-Agent",
+      "value": "curl/8.21.0"
+     },
+     {
+      "name": "Accept",
+      "value": "*/*"
+     },
+     {
+      "name": "Connection",
+      "value": "keep-alive"
+     }
+    ],
+    "header_bytes": 118,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Content-Type",
+      "value": "text/html"
+     },
+     {
+      "name": "Proxy-Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 127,
+    "body_bytes": 351,
+    "content_type": "text/html"
+   },
+   "timing": {
+    "start_ms": 1792871738332,
+    "request_begin_ms": 1792871738339,
+    "request_complete_ms": 1792871738339,
+    "response_begin_ms": 1792871738342,
+    "end_ms": 1792871738343,
+    "duration_ms": 11,
+    "dns_ms": null,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "0:0:0:0:0:0:0:1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "PGh0bWw+DQo8aGVhZD4NCiAgICA8dGl0bGU+Q2hhcmxlcyBXZWIgSW50ZXJmYWNlPC90aXRsZT4NCiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Ii4uL2Nzcy9wbGFpbi5jc3MiIC8+DQo8L2hlYWQ+DQo8Ym9keT4NCjxoMT5DaGFybGVzIFdlYiBJbnRlcmZhY2U8L2gxPg0KPGgyPlJlY29yZGluZzwvaDI+CjxwPlN0YXR1czogUmVjb3JkaW5nPC9wPg0KPHVsPg0KICAgIDxsaT48YSBocmVmPSJzdGFydCI+U3RhcnQ8L2E+PC9saT4NCiAgICA8bGk+PGEgaHJlZj0ic3RvcCI+U3RvcDwvYT48L2xpPg0KICAgIDxsaT48YSBocmVmPSIuLi8iPkJhY2s8L2E+PC9saT4NCjwvdWw+DQo8L2JvZHk+DQo8L2h0bWw+",
+    "returned_bytes": 351,
+    "captured_bytes": 351,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t10": {
+   "schema_version": 1,
+   "transaction_id": "t10",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 48,
+   "complete": true,
+   "first_seen_ms": 1792871747644,
+   "updated_ms": 1792871747657,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/secret",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/secret",
+    "query": null,
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Cookie",
+      "value": "session=synthetic-cookie-not-real"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 159,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:47 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/json; charset=utf-8"
+     },
+     {
+      "name": "Content-Length",
+      "value": "125"
+     },
+     {
+      "name": "Set-Cookie",
+      "value": "session=synthetic-session-cookie; HttpOnly"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 228,
+    "body_bytes": 125,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747644,
+    "request_begin_ms": 1792871747656,
+    "request_complete_ms": 1792871747656,
+    "response_begin_ms": 1792871747656,
+    "end_ms": 1792871747657,
+    "duration_ms": 13,
+    "dns_ms": 0,
+    "connect_ms": 1,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "eyJ1c2VyIjogImRlbW8iLCAiYWNjZXNzX3Rva2VuIjogInN5bnRoZXRpYy1hY2Nlc3MtdG9rZW4tMTIzIiwgInByb2ZpbGUiOiB7InBhc3N3b3JkIjogInN5bnRoZXRpYy1wYXNzd29yZCIsICJwbGFuIjogImZyZWUifX0=",
+    "returned_bytes": 125,
+    "captured_bytes": 125,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t11": {
+   "schema_version": 1,
+   "transaction_id": "t11",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 53,
+   "complete": true,
+   "first_seen_ms": 1792871747671,
+   "updated_ms": 1792871747674,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/status/500",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/status/500",
+    "query": null,
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 129,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 500,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:47 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/json; charset=utf-8"
+     },
+     {
+      "name": "Content-Length",
+      "value": "15"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 203,
+    "body_bytes": 15,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747671,
+    "request_begin_ms": 1792871747672,
+    "request_complete_ms": 1792871747673,
+    "response_begin_ms": 1792871747673,
+    "end_ms": 1792871747674,
+    "duration_ms": 3,
+    "dns_ms": 0,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "eyJzdGF0dXMiOiA1MDB9",
+    "returned_bytes": 15,
+    "captured_bytes": 15,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t12": {
+   "schema_version": 1,
+   "transaction_id": "t12",
+   "session_id": "s-afcd363b",
+   "last_event": "failed",
+   "last_event_id": 57,
+   "complete": true,
+   "first_seen_ms": 1792871747674,
+   "updated_ms": 1792871747688,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://unreachable.example.test:9/unreachable",
+    "scheme": "http",
+    "host": "unreachable.example.test",
+    "port": 9,
+    "path": "/unreachable",
+    "query": null,
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "unreachable.example.test:9"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 144,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 503,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "Charles"
+     },
+     {
+      "name": "Cache-Control",
+      "value": "must-revalidate,no-cache,no-store"
+     },
+     {
+      "name": "Content-Type",
+      "value": "text/html;charset=ISO-8859-1"
+     },
+     {
+      "name": "Content-Length",
+      "value": "932"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 0,
+    "body_bytes": 932,
+    "content_type": "text/html;charset=ISO-8859-1"
+   },
+   "timing": {
+    "start_ms": 1792871747674,
+    "request_begin_ms": null,
+    "request_complete_ms": null,
+    "response_begin_ms": null,
+    "end_ms": 1792871747688,
+    "duration_ms": 14,
+    "dns_ms": 0,
+    "connect_ms": null,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "failed",
+   "error": {
+    "type": "ConnectException",
+    "message": "Connection refused: connect"
+   },
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "PGh0bWw+CjxoZWFkPgogICAgPHRpdGxlPkNoYXJsZXMgRXJyb3IgUmVwb3J0PC90aXRsZT4KICAgIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CmJvZHkgewogICAgZm9udC1mYW1pbHk6IEFyaWFsLEhlbHZldGljYSxTYW5zLXNlcmlmOwogICAgZm9udC1zaXplOiAxMnB4OwogICAgY29sb3I6ICMzMzMzMzM7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmOwp9CgpoMSB7CiAgICBmb250LXNpemU6IDI0cHg7CiAgICBmb250LXdlaWdodDogYm9sZDsKfQoKaDIgewogICAgZm9udC1zaXplOiAxOHB4OwogICAgZm9udC13ZWlnaHQ6IGJvbGQ7Cn0KICAgIDwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+Cgo8aDE+Q2hhcmxlcyBFcnJvciBSZXBvcnQ8L2gxPgo8aDI+RmFpbGVkIHRvIGNvbm5lY3QgdG8gcmVtb3RlIGhvc3Q8L2gyPgo8cD5DaGFybGVzIGZhaWxlZCB0byBjb25uZWN0IHRvIHRoZSByZW1vdGUgaG9zdC4gQ2hlY2sgdGhhdCB5b3VyIEludGVybmV0IGNvbm5lY3Rpb24gaXMgb2sgYW5kIHRoYXQgdGhlIHJlbW90ZSBob3N0IGlzIGFjY2Vzc2libGUuIE1heWJlIHlvdXIgbmV0d29yayB1c2VzIGEgcHJveHkgc2VydmVyIHRvIGFjY2VzcyB0aGUgSW50ZXJuZXQ/IFlvdSBjYW4gY29uZmlndXJlIENoYXJsZXMgdG8gdXNlIGFuIGV4dGVybmFsIHByb3h5IHNlcnZlciBpbiB0aGUgRXh0ZXJuYWwgUHJveHkgU2V0dGluZ3MuPC9wPgo8cD5UaGUgYWN0dWFsIGV4Y2VwdGlvbiByZXBvcnRlZCB3YXM6PC9wPgo8cHJlPgpqYXZhLm5ldC5Db25uZWN0RXhjZXB0aW9uOiBDb25uZWN0aW9uIHJlZnVzZWQ6IGNvbm5lY3QKPC9wcmU+Cgo8cD4KPGk+Q2hhcmxlcyBQcm94eSwgPGEgaHJlZj0iaHR0cHM6Ly93d3cuY2hhcmxlc3Byb3h5LmNvbS8iPmh0dHBzOi8vd3d3LmNoYXJsZXNwcm94eS5jb20vPC9hPjwvaT4KPC9wPgo8L2JvZHk+CjwvaHRtbD4=",
+    "returned_bytes": 932,
+    "captured_bytes": 932,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t2": {
+   "schema_version": 1,
+   "transaction_id": "t2",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 8,
+   "complete": true,
+   "first_seen_ms": 1792871746031,
+   "updated_ms": 1792871746034,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?api_key=synthetic-key-1",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/json",
+    "query": "api_key=synthetic-key-1",
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Authorization",
+      "value": "Bearer synthetic-token-not-real"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 186,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:46 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/json; charset=utf-8"
+     },
+     {
+      "name": "Content-Length",
+      "value": "65"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 228,
+    "body_bytes": 65,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746030,
+    "request_begin_ms": 1792871746032,
+    "request_complete_ms": 1792871746033,
+    "response_begin_ms": 1792871746033,
+    "end_ms": 1792871746034,
+    "duration_ms": 4,
+    "dns_ms": 0,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "eyJoZWxsbyI6ICJ3b3JsZCIsICJpdGVtcyI6IFsxLCAyLCAzXSwgInF1ZXJ5X3NlZW4iOiBbImFwaV9rZXkiXX0=",
+    "returned_bytes": 65,
+    "captured_bytes": 65,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t3": {
+   "schema_version": 1,
+   "transaction_id": "t3",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 13,
+   "complete": true,
+   "first_seen_ms": 1792871746035,
+   "updated_ms": 1792871746038,
+   "attached_to_session": true,
+   "request": {
+    "method": "POST",
+    "url": "http://api.example.test/echo",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/echo",
+    "query": null,
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Content-Length",
+      "value": "33"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/json"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 176,
+    "body_bytes": 33,
+    "content_type": "application/json"
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:46 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/json; charset=utf-8"
+     },
+     {
+      "name": "Content-Length",
+      "value": "65"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 228,
+    "body_bytes": 65,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746035,
+    "request_begin_ms": 1792871746037,
+    "request_complete_ms": 1792871746037,
+    "response_begin_ms": 1792871746037,
+    "end_ms": 1792871746038,
+    "duration_ms": 3,
+    "dns_ms": 0,
+    "connect_ms": 1,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": true,
+    "base64": "eyJwYXNzd29yZCI6ICJzeW50aGV0aWMiLCAibiI6IDF9",
+    "returned_bytes": 33,
+    "captured_bytes": 33,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   },
+   "response_body": {
+    "available": true,
+    "base64": "eyJyZWNlaXZlZF9ieXRlcyI6IDMzLCAianNvbiI6IHsicGFzc3dvcmQiOiAic3ludGhldGljIiwgIm4iOiAxfX0=",
+    "returned_bytes": 65,
+    "captured_bytes": 65,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t4": {
+   "schema_version": 1,
+   "transaction_id": "t4",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 18,
+   "complete": true,
+   "first_seen_ms": 1792871746056,
+   "updated_ms": 1792871746062,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/redirect",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/redirect",
+    "query": null,
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 127,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 302,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:46 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "text/plain"
+     },
+     {
+      "name": "Content-Length",
+      "value": "0"
+     },
+     {
+      "name": "Location",
+      "value": "/json?from=redirect"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 181,
+    "body_bytes": 0,
+    "content_type": "text/plain"
+   },
+   "timing": {
+    "start_ms": 1792871746056,
+    "request_begin_ms": 1792871746057,
+    "request_complete_ms": 1792871746058,
+    "response_begin_ms": 1792871746058,
+    "end_ms": 1792871746062,
+    "duration_ms": 6,
+    "dns_ms": 0,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "",
+    "returned_bytes": 0,
+    "captured_bytes": 0,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t5": {
+   "schema_version": 1,
+   "transaction_id": "t5",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 23,
+   "complete": true,
+   "first_seen_ms": 1792871746063,
+   "updated_ms": 1792871746065,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/json?from=redirect",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/json",
+    "query": "from=redirect",
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 137,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:46 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/json; charset=utf-8"
+     },
+     {
+      "name": "Content-Length",
+      "value": "62"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 228,
+    "body_bytes": 62,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746063,
+    "request_begin_ms": 1792871746064,
+    "request_complete_ms": 1792871746064,
+    "response_begin_ms": 1792871746064,
+    "end_ms": 1792871746065,
+    "duration_ms": 2,
+    "dns_ms": 0,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "eyJoZWxsbyI6ICJ3b3JsZCIsICJpdGVtcyI6IFsxLCAyLCAzXSwgInF1ZXJ5X3NlZW4iOiBbImZyb20iXX0=",
+    "returned_bytes": 62,
+    "captured_bytes": 62,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t6": {
+   "schema_version": 1,
+   "transaction_id": "t6",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 28,
+   "complete": true,
+   "first_seen_ms": 1792871746087,
+   "updated_ms": 1792871747590,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/slow?ms=1500",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/slow",
+    "query": "ms=1500",
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 131,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:47 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/json; charset=utf-8"
+     },
+     {
+      "name": "Content-Length",
+      "value": "18"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 187,
+    "body_bytes": 18,
+    "content_type": "application/json; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871746087,
+    "request_begin_ms": 1792871746088,
+    "request_complete_ms": 1792871746089,
+    "response_begin_ms": 1792871747589,
+    "end_ms": 1792871747590,
+    "duration_ms": 1503,
+    "dns_ms": 0,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "eyJzbGVwdF9tcyI6IDE1MDB9",
+    "returned_bytes": 18,
+    "captured_bytes": 18,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t7": {
+   "schema_version": 1,
+   "transaction_id": "t7",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 33,
+   "complete": true,
+   "first_seen_ms": 1792871747610,
+   "updated_ms": 1792871747617,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/large?bytes=300000",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/large",
+    "query": "bytes=300000",
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 137,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:47 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "text/plain; charset=utf-8"
+     },
+     {
+      "name": "Content-Length",
+      "value": "300000"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 228,
+    "body_bytes": 300000,
+    "content_type": "text/plain; charset=utf-8"
+   },
+   "timing": {
+    "start_ms": 1792871747610,
+    "request_begin_ms": 1792871747611,
+    "request_complete_ms": 1792871747611,
+    "response_begin_ms": 1792871747612,
+    "end_ms": 1792871747616,
+    "duration_ms": 6,
+    "dns_ms": 0,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYwMTIzNDU2Nzg5YWJjZGVmMDEyMzQ1Njc4OWFiY2RlZg==",
+    "returned_bytes": 4096,
+    "captured_bytes": 300000,
+    "truncated": true,
+    "decoded": false,
+    "content_encoding": null
+   }
+  },
+  "t8": {
+   "schema_version": 1,
+   "transaction_id": "t8",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 38,
+   "complete": true,
+   "first_seen_ms": 1792871747617,
+   "updated_ms": 1792871747619,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/gzip",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/gzip",
+    "query": null,
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 123,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:47 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/json"
+     },
+     {
+      "name": "Content-Length",
+      "value": "53"
+     },
+     {
+      "name": "Content-Encoding",
+      "value": "gzip"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 228,
+    "body_bytes": 53,
+    "content_type": "application/json"
+   },
+   "timing": {
+    "start_ms": 1792871747617,
+    "request_begin_ms": 1792871747619,
+    "request_complete_ms": 1792871747619,
+    "response_begin_ms": 1792871747619,
+    "end_ms": 1792871747619,
+    "duration_ms": 2,
+    "dns_ms": 0,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "eyJjb21wcmVzc2VkIjogdHJ1ZSwgInBhZCI6ICJ4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eCJ9",
+    "returned_bytes": 531,
+    "captured_bytes": 53,
+    "truncated": false,
+    "decoded": true,
+    "content_encoding": "gzip"
+   }
+  },
+  "t9": {
+   "schema_version": 1,
+   "transaction_id": "t9",
+   "session_id": "s-afcd363b",
+   "last_event": "response_complete",
+   "last_event_id": 43,
+   "complete": true,
+   "first_seen_ms": 1792871747640,
+   "updated_ms": 1792871747643,
+   "attached_to_session": true,
+   "request": {
+    "method": "GET",
+    "url": "http://api.example.test/binary",
+    "scheme": "http",
+    "host": "api.example.test",
+    "port": 18765,
+    "path": "/binary",
+    "query": null,
+    "protocol_version": "HTTP/1.1",
+    "headers": [
+     {
+      "name": "Accept-Encoding",
+      "value": "identity"
+     },
+     {
+      "name": "Host",
+      "value": "api.example.test"
+     },
+     {
+      "name": "User-Agent",
+      "value": "Python-urllib/3.11"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 125,
+    "body_bytes": 0,
+    "content_type": null
+   },
+   "response": {
+    "status": 200,
+    "headers": [
+     {
+      "name": "Server",
+      "value": "charles-mcp-fixture/1.0 Python/3.11.0"
+     },
+     {
+      "name": "Date",
+      "value": "Sat, 24 Oct 2026 19:55:47 GMT"
+     },
+     {
+      "name": "Content-Type",
+      "value": "application/octet-stream"
+     },
+     {
+      "name": "Content-Length",
+      "value": "2048"
+     },
+     {
+      "name": "Connection",
+      "value": "close"
+     }
+    ],
+    "header_bytes": 228,
+    "body_bytes": 2048,
+    "content_type": "application/octet-stream"
+   },
+   "timing": {
+    "start_ms": 1792871747640,
+    "request_begin_ms": 1792871747641,
+    "request_complete_ms": 1792871747642,
+    "response_begin_ms": 1792871747642,
+    "end_ms": 1792871747642,
+    "duration_ms": 2,
+    "dns_ms": 0,
+    "connect_ms": 0,
+    "tls_handshake_ms": null
+   },
+   "connection": {
+    "remote_address": "127.0.0.1",
+    "client_address": "127.0.0.1",
+    "alpn": null,
+    "tls_protocol": null,
+    "cipher_suite": null,
+    "websocket": false,
+    "tunnel": false
+   },
+   "charles_status": "complete",
+   "error": null,
+   "headers_redacted": true,
+   "request_body": {
+    "available": false,
+    "reason": "no_body"
+   },
+   "response_body": {
+    "available": true,
+    "base64": "UCF36BF1iTZOdaDuE6QkHHBZQ2T/CiAguEXPL+90KDnVsTBGdWzO8fUFwrwlAkiCXoo3iFw0SkBGDkMfGTqGWb866yvnNk4S+oKUJ/5nTAXgYcTcXTo4sCgGOu/siMVDSHm/xue+TKyoZ+ess1RS2rHZ4JaT/at9+hyPaU01q/DOuxB2wBPWPtHinTG0UVcOsXVsCzn7wa9Qr8DT9Bzl3tMinOuGUZ9nlXmMUGRorjK49adCG/IF+oOT+tQScXn57EQMP9ZnT6KsqBC42iP6XBuAUWCNmuWHVWw8VKjAU3dALjZnasX7nQS/ZQBkTCewQJ50JVlQ+nih+d6EdFG4wNrJPR2VzvAtiKmWy0eTLgGDZO/qEUR07x5lhJjSAJyA1SB2FWjpd0FADyAIxMr8Aiu/UNcyk+nt2/tj8odMd+8nAPxJz9NUzrnVytfYtSRvm9CD7xx91uki3KpCm9nabNuQO7Be5uFX9QJnzeD/JNUeOFxvdcDsbIaL4tLzidHXZ3dQ0yRuRc7Zt9HdgZSm86yXXK4YvpAlTuhfCyTB3MN7wFLOw6XRppmndq/5DUSeDnKsly4FNsxG5NtzG6DzPsCDCzch+xBGxXryT/qOUQegn0L5jFWh420PHxu5/ZXccZ5Gp5Z81+GgjQX03rAO1OBAYU1raTDMPzJly9X/Fs/GR2a6kCJl4Cy88SUmzrD8LTaBHPXXoK55FG2dWCeMs/l3JkJKi9mF86Np4xw6Q5JcjNVYs4GPRs16w8BNS3nLbWuY5Cy/vJzDcH9jf6/1rvKS98lyWEOVOUbnMCr9X9TrfreNDDairFqcoxvzerq4z2sCQ2zsnvd6fCP/ZMB3Flzha5yEud7APS8Pb6jkmkdV3a6YtT8lsA13VlFgt/3WymyrTRHcGhxX0BeCb1ckAqdQBK/sAah2VhPkf0dp41VHgSvhfFtPIxE3OKsvSe94uGKJwcy/VJOhf6JtsoYSeVG6g9dVq5SzaejP9k8Cq2pB3Hb/RSZnDzn2q1YxHWZT7oXhR5+ZSv9kWhjhyQfnVJPL/Ee/cAHvP7pAdBFlVrVAVobwFqTF2FFKo08oNNjC8LUl71c7rftlew3b+WT5BlO/jtX8o6tUT4d6HEK/Aqlh3XF88EIjJIN2a0KDQ+VckM4a0Dvuqi6M/2awZQ/QRdW65PuQM9S5hVgximazRNArkqtA4tMD98KaPlaZofT+YRbqTrZGdkYby+UWhJXARuf+wzd21nkWdoyFPp164RE4ghYMyilphd1YZTYT0dS70n0Wi29GaJeBjY4UAcGCbRBvWveSAwTGSMDi/4ySgod99zDoquQyw5p+eaNEHDAmdZUgOl70scypOgS5TS67l4BMoGAYNmxGqIbIWtfvukfEkGfJ0OEcBQe/fJ+VY7TP0L4p/91dFxnLmKPfUwbuvnMhTS+sJd/MHqJlJ6lC77E8Fh/BCaSkqBQmqkYSYWbxuOxp3rz0lgXn71Aq5WyqGtGpZCVLX8cPaKEgDGefUqmTsaKPnNWfJ1KLA6CZIiN+IERgShM5lpEVfoKJ5w6uBRI0tWQRIB8mTOxYzJnuf0Wx3nS6hVDSJPyXWaDlGIulIf6Gmq2x8jqdj6mODQRvzWAGYrl2ClhPGBvMpi1w/BxCRVoGgGeZKadlQajuHeOzITVAMxCyVC8g5TpmvsdU0FmdGzHzDSXX+hzGendQBvr1ILhM77oZiUmfP9hDlaJEdHRPyH0JTe3OmavllRTiuJGzlPTWzgcTms03LujsF7do6kMESmRC2tqJg1gVs1+nX2NSjHPMHdI6beB6qIkirqOov6GgLgqvM+nxAYlzKjhX24SUUjdsqO/WeLjAD4VFAQLQo2C/0x1npQS6SwvlhkejlUTG0uJdYj4WDpAgZN5tlrXXIiJ8ZvTE0nhQsqWxbjavBSNUpINT9giUJPPZpeNaPWgdVKGYLzMc7aybdXkMTa1+u1yzg0lBxVLCav5uA9tR0JmpO0vgUhJRJfn8AST4tcw3fQWbWrTM5KY/MQf4UjQYz4dLUaRU3lKJLHLtSF3kD+mOCds8vbks6JM7sD+wFL3Go//OsjYrHBNFFplNZo8UjDWwyIs02y6K2QTz4PVJgUMjQ2kAy/N+QUF7GBNh5+K4dB99hQY6+9zAzMoepEiWS4AwjTklmPxC+1QKmDyf7bxNvoedpvvDvWfb1aEBzfVfrhYPN0+ms7AeVvPg633M4doFNzWI4qlz2TFY+I6nRRh8uItv5eomIEVUbHKGTOSiGbJOvmPllbxh7HhZx7o2/Qqds9/m4oUs19pdCZPpZhRZq9tVlhHjRCPvXWeBINYeKEUj5JXEfEu4qdkiVtTCJvgk4lbpx4yOJN5JjaOpPX4B0ZBAGZ4xG6Dr0dZOZB3O8ICDqMq059hKZEAB1GGF85eypt5rUAKLng0ScDQ6E0HItISSGWRNKd2yQQuGjNRc7uDq96vONPd4cAjjVDn9XNsqNQKfsflAzJn7iBS+xUxf/TAh9bGEvSBMwwAwEm18DXrZ/anvB88lFi7L6ruG90TGDna4LkCFc01plZw9ndSpbhEAG6Xe6ZRmh+DBlSE3Xhab2d8NstpZC9hEY0tRI2Qvw/4qgxoKQjhTw0RAXqd5f4AC6C3X9+i3cFAaPhp3b8P530X8oPzTOzRkutgjxIhz02hWIhVlnYdFOJT537UNe2Pvl13drZc+KmiUfJlJM3HF8lquPvzdm70=",
+    "returned_bytes": 2048,
+    "captured_bytes": 2048,
+    "truncated": false,
+    "decoded": false,
+    "content_encoding": null
+   }
+  }
+ }
+}

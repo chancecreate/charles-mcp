@@ -1,0 +1,5 @@
+# Add to ~/.codex/config.toml
+[mcp_servers.charles]
+command = "charles-mcp"
+args = []
+# env = { CHARLES_MCP_ALLOW_BODIES = "1", CHARLES_MCP_HOST_ALLOWLIST = "api.example.com" }

@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "charles-mcp"
+version = "0.1.0"
+description = "Read-only MCP server exposing live Charles Proxy traffic from an in-process event bridge"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "charles-mcp contributors" }]
+keywords = ["mcp", "charles", "proxy", "http", "debugging", "model-context-protocol"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: Proxy Servers",
+    "Topic :: Software Development :: Debuggers",
+]
+dependencies = [
+    "mcp>=1.10,<2",
+    "pydantic>=2.6,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.5"]
+
+[project.scripts]
+charles-mcp = "charles_mcp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = [
+    "live: requires a running Charles with the charles-mcp agent (opt-in, never in CI)",
+]
+addopts = "-m 'not live'"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = ["S101"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S105", "S106"]
+"../scripts/*" = ["S310"]  # dev scripts open fixture URLs through a local proxy

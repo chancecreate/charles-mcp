@@ -1,0 +1,32 @@
+# Proprietary Charles binaries must never be committed.
+*.jar
+!java/**/src/test/resources/**/*.jar
+charles.jar
+
+# Build output
+target/
+build/
+dist/
+*.class
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local runtime state / captures (never commit real traffic)
+*.chls
+*.chlsj
+*.har
+!fixtures/*.har
+local/
+.charles-mcp/
+
+# IDE
+.idea/
+.vscode/
+*.iml

@@ -1,0 +1,21 @@
+# charles-mcp sidecar settings. Pass with:  charles-mcp --config path\to\charles-mcp.toml
+# or set CHARLES_MCP_CONFIG. Environment variables override this file.
+
+[charles_mcp]
+# Where the agent inside Charles writes its port + token (default shown).
+# discovery_file = 'C:\Users\YOU\AppData\Local\charles-mcp\bridge.json'
+
+# Bodies are OFF by default. When on, they are size-capped, redacted and binary-filtered.
+allow_bodies = false
+max_body_bytes = 16384      # per body, hard cap 262144
+max_text_chars = 8000
+
+# Only expose these hosts (fnmatch globs). Empty = everything not denied.
+host_allowlist = []
+# Never expose these hosts.
+host_denylist = ["control.charles", "*.internal.example.com"]
+
+# Extra redaction on top of the built-in rules (which are always on).
+redact_header_names = ["X-Internal-User"]
+redact_query_keys = ["customer_id"]
+redact_json_keys = ["email", "phone"]

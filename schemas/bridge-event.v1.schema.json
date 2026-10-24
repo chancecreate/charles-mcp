@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:charles-mcp:bridge-event:v1",
+  "title": "charles-mcp bridge event (schema_version 1)",
+  "description": "One lifecycle event observed inside Charles's JVM, as served by the bridge `events` operation. URLs are as captured (the MCP sidecar redacts query secrets before any MCP client sees them). Additive fields may appear in v1; changing the meaning of a field requires schema_version 2.",
+  "type": "object",
+  "required": ["schema_version", "event_id", "session_id", "event_type", "timestamp_ms"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "event_id": {"type": "integer", "minimum": 1, "description": "Strictly increasing per bridge process. Use as a cursor."},
+    "session_id": {"type": "string", "description": "Opaque id of the Charles recording session object ('none' if no session was attached)."},
+    "transaction_id": {"type": ["string", "null"], "description": "Stable per bridge process across all updates of one transaction (e.g. 't42'). Null for session-level events."},
+    "event_type": {
+      "enum": ["request_created", "request_headers_ready", "request_complete", "response_headers_ready",
+               "response_complete", "failed", "removed", "session_changed"],
+      "description": "Each maps to a ProxyListener callback; response_complete, failed and removed are terminal and occur at most once per transaction."
+    },
+    "timestamp_ms": {"type": "integer", "description": "Wall clock (epoch ms) when the bridge observed the callback."},
+    "request": {
+      "type": "object",
+      "properties": {
+        "method": {"type": ["string", "null"]},
+        "url": {"type": ["string", "null"]},
+        "host": {"type": ["string", "null"]}
+      }
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "status": {"type": ["integer", "null"], "description": "Null until response headers are known."},
+        "content_type": {"type": ["string", "null"]}
+      }
+    },
+    "timing": {
+      "type": "object",
+      "description": "Charles's own timestamps for the transaction at the time of the event.",
+      "properties": {
+        "start_ms": {"type": ["integer", "null"]},
+        "end_ms": {"type": ["integer", "null"]},
+        "duration_ms": {"type": ["integer", "null"], "description": "end_ms - start_ms"}
+      }
+    },
+    "sizes": {
+      "type": "object",
+      "properties": {
+        "request_bytes": {"type": "integer"},
+        "response_bytes": {"type": "integer"}
+      }
+    },
+    "charles_status": {"type": ["string", "null"], "description": "Charles's transaction status label, e.g. 'complete', 'failed', 'receiving_response_body'."},
+    "error_type": {"type": ["string", "null"], "description": "Exception class simple name for failed transactions."}
+  },
+  "additionalProperties": true
+}

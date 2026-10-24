@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120" viewBox="0 0 520 120" role="img" aria-label="charles-mcp">
+  <title>charles-mcp</title>
+  <g fill="none" stroke="#0e9f8e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10" y="14" width="92" height="92" rx="22"/>
+    <path d="M34 48h44l-12-12"/>
+    <path d="M78 72H34l12 12"/>
+  </g>
+  <text x="124" y="78" fill="#0e9f8e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="54" font-weight="700" letter-spacing="-1">charles<tspan fill="#5b6b7a" font-weight="400">-mcp</tspan></text>
+</svg>
