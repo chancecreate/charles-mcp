@@ -59,5 +59,6 @@ Remove-Item $stage, "$OutDir\wheel" -Recurse -Force
 $sums = Get-ChildItem $OutDir -File | Sort-Object Name | ForEach-Object {
     "{0}  {1}" -f (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower(), $_.Name
 }
-Set-Content -Path "$OutDir\SHA256SUMS.txt" -Value $sums -Encoding ascii
+# LF line endings so `sha256sum -c` works on Linux/macOS as well as Windows.
+[IO.File]::WriteAllText("$OutDir\SHA256SUMS.txt", (($sums -join "`n") + "`n"), [Text.Encoding]::ASCII)
 Get-ChildItem $OutDir | Format-Table Name, Length -AutoSize
